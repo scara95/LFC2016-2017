@@ -1,6 +1,6 @@
 /*
  author LG
- this file should be the minimum that can be provided to Yacc
+ this file is the minimum that can be provided to Yacc
  */
 %token id
 
