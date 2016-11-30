@@ -1,0 +1,12 @@
+//non sense example grammar
+%%
+
+PROGRAM: STATEMENT	;
+
+STATEMENT:  EXPRESSION STATEMENT ';'
+| STATEMENTLIST ;
+
+EXPRESSION: /*empty*/ ;
+STATEMENTLIST: STATEMENT
+| /*empty*/
+;
