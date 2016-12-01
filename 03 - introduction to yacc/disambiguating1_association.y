@@ -1,6 +1,6 @@
 /*
 	author Lorenzo Gramola
-	on the precedence of operators, example 1
+	on the associativity of operators, example 1
 
 	NOTE: we give + and * the very same precedence, but we are telling the parser that they are left associative
 	no conflict this time BUT THEY HAVE THE SAME PRECEDENCE, WHICH IS NOT WHAT WE REALLY WANT
