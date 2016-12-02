@@ -9,13 +9,13 @@
 
 %%
 
- p: expr '\n' p       {printf("reduced\n");}
+ p: expr '\n' p       { printf("%d\n", $1);}
   | /*empty*/
   ;
 
 expr : NUMBER
-      | expr '+' expr
-      | expr '-' expr
+      | expr '+' expr   {$$=$1+$3;}
+      | expr '-' expr   {$$=$1-$3;}
       ;
 
 %%
