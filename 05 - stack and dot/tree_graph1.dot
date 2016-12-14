@@ -1,0 +1,28 @@
+graph tree_graph1{
+	12 -- 13
+
+	12 -- 14
+
+	14 -- 8
+
+	12 -- 15
+
+	15 -- 11
+
+	12 [label="if"]
+
+	13 [label="id(X)"]
+
+	12 [label="if"]
+
+	14 [label="print"]
+
+	8 [label="id(X)"]
+
+	12 [label="if"]
+
+	15 [label="print"]
+
+	11 [label="c(4)"]
+
+}
