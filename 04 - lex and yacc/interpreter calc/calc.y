@@ -145,7 +145,9 @@ nodeType *opr(int oper, int nops, ...){
                                             to decide what kind of type to return and
                                             how much to move forward the pointer.
                                             */
-        p->opr.op[i]->uid = uid++;
+        if(p->opr.op[i] != NULL) {
+            p->opr.op[i]->uid = uid++;
+        }
     }
     va_end(ap); /* MUST be called BEFORE THE FUNCTION TERMINATES. it provides
                  the necessary cleaning functions.*/
